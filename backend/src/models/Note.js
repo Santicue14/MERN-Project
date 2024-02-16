@@ -8,7 +8,7 @@ const noteSchema= new Schema({
     content: String,
     date: {
         type: Date,
-        default: Date.now(),
+        default: (Date.now() - (3 * 60 * 60 * 1000)),
     },
     user: String},
     {
